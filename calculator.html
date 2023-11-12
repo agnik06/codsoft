@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .button
+        {
+            color:greenyellow;background: black;
+
+        }
+        .button:hover{
+            color:black;
+            background: greenyellow;
+            border:4px outset black;
+            transition-duration: 0.4s;
+            
+            
+        }
+        
+    </style>
+    
+    <title>My Calculator</title>
+</head>
+
+<body>
+    <h1 style="text-align:center;font-family: cursive;">MY Calculator</h1>
+    <br><br><br><br><br><br><br><br>
+    
+      
+    <input   class="input" type="text" style="position: relative;left:608px;font-size: 20px;border:20px outset black;padding:40px;border-radius: 15px;" placeholder="enter stuff"/>
+    <div class="calculator" style="text-align:center;margin:17px;width:fit-content;background-color:moccasin;position: relative;left:586px;padding:36px;border:10px outset black">
+       <div class="0" style="display:inline">
+        <button class="button" type="button" style="border-radius:15%;font-size: 70px;padding:10px;" onclick="ev()" >
+            =
+        </button>
+
+       </div>
+       <div class="c" style="display:inline">
+        <button class="button" type="button" style="border-radius:15%;font-size: 70px;padding:10px;" onclick="clr()">
+            c
+        </button>
+    </div>
+    <div class="d" style="display:inline">
+        <button class="button" type="button" style="border-radius:15%;font-size: 70px;padding:10px;" onclick="swap('%')">
+            %
+        </button>
+    </div>
+    <div class="e" style="display:inline">
+        <button class="button" type="button" style="border-radius:15%;font-size: 70px;padding:10px;" onclick="swap('*')">
+            X
+        </button>
+    </div>
+    
+       <br><br>
+        <div id="1" style="display:inline;">
+            <button class="button" type="button" style="border-radius: 15%;font-size: 76px;padding:10px;" onclick="swap('1')">
+                1
+            </button>
+        </div>
+        
+        <div class="2" style="display:inline">
+            <button class="button" type="button" style="border-radius: 15%;font-size: 76px;padding:10px;" onclick="swap('2')">
+                2
+            </button>
+        </div>
+        <div class="3" style="display:inline;">
+            <button class="button" type="button" style="border-radius: 15%;font-size: 76px;padding:10px;" onclick="swap('3')">
+                3
+                </button>
+                </div>
+        
+        <div class="4" style="display:inline;">
+            <button class="button" type="button" style="border-radius: 15%;font-size: 76px;padding:10px;width:70px"onclick="swap('-')">
+                -
+
+            </button>
+        </div>
+        <br><br>
+        <div class="5" style="display:inline;">
+            <button class="button" type="button" style="border-radius: 15%;font-size: 76px;padding:10px;"onclick="swap('4')">
+                4
+            </button> 
+        </div>
+        <div class="6" style="display:inline;">
+            <button class="button" type="button" style="border-radius: 15%;font-size: 76px;padding:10px;"onclick="swap('5')">
+                5
+            </button> 
+        </div>
+        
+        <div class="8" style="display:inline;">
+            <button class="button"type="button" style="border-radius: 15%;font-size: 76px;padding:10px;"onclick="swap('6')">
+                6
+            </button> 
+        </div>
+        <div class="9" style="display:inline;">
+            <button class="button" type="button" style="border-radius: 15%;font-size: 76px;padding:10px;width:70px"onclick="swap('+')">
+                +
+
+            </button>
+
+        </div>
+        <br><br>
+        <div class="10" style="display:inline">
+            <button class="button"type="button" style="border-radius: 15%;font-size: 76px;padding:10px;"onclick="swap('7')">
+                7
+
+            </button>
+
+        </div>
+        <div class="11" style="display:inline">
+            <button class="button"type="button" style="border-radius: 15%;font-size: 76px;padding:10px;" onclick="swap('8')">
+                8
+            </button>
+        </div>
+        <div class="12" style="display:inline">
+            <button class="button"type="button" style="border-radius: 15%;font-size: 76px;padding:10px;" onclick="swap('9')">
+                9
+            </button>
+        </div>
+        <div class="13" style="display:inline;">
+            <button class="button"type="button" style="border-radius: 15%;font-size: 76px;padding:10px;width:70px"onclick="swap('/')">
+                /
+
+            </button>
+
+        </div>
+        
+
+    </div>
+
+    <script src="sr.js">
+        
+        
+    
+</script>
+
+
+</body>
+
+</html>
